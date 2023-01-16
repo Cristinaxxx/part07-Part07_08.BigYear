@@ -41,7 +41,9 @@ public class Bird {
     } 
     
     public String toString() {
-        return this.name + "(" + this.latinName + "):" + this.observationCount + " observations";
+        if(this.observationCount == 1) {
+            return this.name + " (" + this.latinName + "): " + this.observationCount + " observation";
+        } else return this.name + " (" + this.latinName + "): " + this.observationCount + " observations";
     } 
     
 }

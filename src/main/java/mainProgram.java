@@ -10,10 +10,7 @@ public class mainProgram {
         
         UserInterface ui = new UserInterface(scan);
         
-        System.out.println("Printing main1");
         ui.start();
-        
-        System.out.println("Printing main2");
 
     }
 

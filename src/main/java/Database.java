@@ -17,8 +17,8 @@ public class Database {
     private ArrayList<Bird> birdDatabase;
   
     
-    public Database(ArrayList<Bird> birdDatabase) {
-        this.birdDatabase = new ArrayList<>();
+    public Database() {
+        this.birdDatabase = new ArrayList<Bird>();
     } 
     
     public void add(Bird bird) {
@@ -30,22 +30,19 @@ public class Database {
             if(bird.getName().toLowerCase().equals(birdName.toLowerCase())) {
                 bird.observation();
             }
-            else {
-                System.out.println("Not a bird!");
-            }
         }
     }
     
      public void printAll() {
         for(Bird bird: this.birdDatabase) {
-            bird.toString();
+            System.out.println(bird.toString());
         }
     }
      
       public void printOne(String birdName) {
         for(Bird bird: this.birdDatabase) {
             if(bird.getName().toLowerCase().equals(birdName.toLowerCase()))
-            bird.toString();
+                System.out.println(bird.toString());
         }
     }
 }
